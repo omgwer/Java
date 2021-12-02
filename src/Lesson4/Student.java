@@ -9,6 +9,12 @@ public class Student
     double meanEconomics;
     double meanMath;
     double meanEnglish;
+
+    void averageGrade(Student student1)
+    {
+        double result = (student1.meanEconomics + student1.meanMath + student1.meanEnglish) / 3;
+        System.out.println(result);
+    }
 }
 
 class StudentTest
@@ -42,8 +48,12 @@ class StudentTest
         student3.meanEnglish = 4.12;
         student3.meanMath = 4.33;
 
-        System.out.println("mean score " + student1.name + " " + student1.surname + " = " + (student1.meanEconomics + student1.meanMath + student1.meanEnglish) / 3);
-        System.out.println("mean score " + student2.name + " " + student2.surname + " = " + (student2.meanEconomics + student2.meanMath + student2.meanEnglish) / 3);
-        System.out.println("mean score " + student3.name + " " + student3.surname + " = " + (student3.meanEconomics + student3.meanMath + student3.meanEnglish) / 3);
+//        System.out.println("mean score " + student1.name + " " + student1.surname + " = " + (student1.meanEconomics + student1.meanMath + student1.meanEnglish) / 3);
+//        System.out.println("mean score " + student2.name + " " + student2.surname + " = " + (student2.meanEconomics + student2.meanMath + student2.meanEnglish) / 3);
+//        System.out.println("mean score " + student3.name + " " + student3.surname + " = " + (student3.meanEconomics + student3.meanMath + student3.meanEnglish) / 3);
+
+        student1.averageGrade(student1);
+        student1.averageGrade(student2);
+        student1.averageGrade(student3);
     }
 }
