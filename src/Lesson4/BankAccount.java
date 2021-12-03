@@ -1,24 +1,20 @@
 package Lesson4;
 
-public class BankAccount
-{
+public class BankAccount {
     int id;
     String name = "ded";
     double balance;
 
-    void popolnenieScheta(double up)
-    {
+    void popolnenieScheta(double up) {
         balance += up;
     }
 
-    void snyatieSoScheta(double down)
-    {
+    void snyatieSoScheta(double down) {
         balance -= down;
     }
 }
 
-class BankAccountTest
-{
+class BankAccountTest {
     public static void main(String[] args) {
         BankAccount MyAccount = new BankAccount();
         BankAccount YourAccount = new BankAccount();

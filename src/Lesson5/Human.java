@@ -1,19 +1,16 @@
 package Lesson5;
 
-public class Human
-{
+public class Human {
     String name;
     Car3 car;
     BankAccount bA;
 
-    void info()
-    {
+    void info() {
         System.out.println("Name " + name + ". Auto color: " + car.color + ". Bank balance: " + bA.balance + "$");
     }
 }
 
-class HumanTest
-{
+class HumanTest {
     public static void main(String[] args) {
         Human h = new Human();
         h.name = "David";
@@ -23,10 +20,8 @@ class HumanTest
     }
 }
 
-class Car3
-{
-    Car3(String c, String e)
-    {
+class Car3 {
+    Car3(String c, String e) {
         color = c;
         engine = e;
     }
@@ -35,13 +30,12 @@ class Car3
     String engine;
 }
 
-class BankAccount
-{
-    BankAccount(int id2, double balance2)
-    {
+class BankAccount {
+    BankAccount(int id2, double balance2) {
         id = id2;
         balance = balance2;
     }
+
     int id;
     double balance;
 }

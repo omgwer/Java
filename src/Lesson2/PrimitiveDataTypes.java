@@ -1,9 +1,7 @@
 package Lesson2;
 
-public class PrimitiveDataTypes
-{
-    public static void main(String [] args)
-    {
+public class PrimitiveDataTypes {
+    public static void main(String[] args) {
         byte b1 = 127;
         short s1 = -10000;
         int i1 = -1231234;

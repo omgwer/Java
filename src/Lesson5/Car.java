@@ -1,15 +1,12 @@
 package Lesson5;
 
-public class Car
-{
-    Car(String cvet, String motor)
-    {
+public class Car {
+    Car(String cvet, String motor) {
         color = cvet;
         engine = motor;
     }
 
-    Car()
-    {
+    Car() {
         System.out.println("Obj is created!");
     }
 
@@ -17,28 +14,23 @@ public class Car
     String engine;
     int speed;
 
-    int gaz(int skorost)
-    {
+    int gaz(int skorost) {
         speed += skorost;
         return speed;
     }
 
-    int tormoz(int skorost)
-    {
+    int tormoz(int skorost) {
         speed -= skorost;
         return speed;
     }
 
-    void showInfo()
-    {
+    void showInfo() {
         System.out.println("Your auto color: " + color + ". Your auto engine: " + engine + ". Your auto speed: " + speed + " Km/h.");
     }
 }
 
-class CatTest
-{
-    public static void main(String[] args)
-    {
+class CatTest {
+    public static void main(String[] args) {
         Car Car1 = new Car("red", "v12");
         Car Car2 = new Car();
         System.out.println(Car1.engine);

@@ -1,7 +1,6 @@
 package Lesson4;
 
-public class Student
-{
+public class Student {
     int billetNumber;
     String name;
     String surname;
@@ -10,18 +9,15 @@ public class Student
     double meanMath;
     double meanEnglish;
 
-    Student()
-    {
+    Student() {
 
     }
 
-    Student(int billetNumber1, String name1, String surname1, int studyYear1)
-    {
+    Student(int billetNumber1, String name1, String surname1, int studyYear1) {
         this(billetNumber1, name1, surname1, studyYear1, 0.0, 0.0, 0.0);
     }
 
-    Student(int billetNumber1, String name1, String surname1, int studyYear1, double meanEconomics1, double meanMath1, double meanEnglish1)
-    {
+    Student(int billetNumber1, String name1, String surname1, int studyYear1, double meanEconomics1, double meanMath1, double meanEnglish1) {
         billetNumber = billetNumber1;
         name = name1;
         surname = surname1;
@@ -31,17 +27,14 @@ public class Student
         meanEnglish = meanEnglish1;
     }
 
-    void averageGrade(Student student1)
-    {
+    void averageGrade(Student student1) {
         double result = (student1.meanEconomics + student1.meanMath + student1.meanEnglish) / 3;
         System.out.println(result);
     }
 }
 
-class StudentTest
-{
-    public static void main(String[] args)
-    {
+class StudentTest {
+    public static void main(String[] args) {
         Student student1 = new Student();
         Student student2 = new Student();
         Student student3 = new Student();
