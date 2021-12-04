@@ -1,7 +1,7 @@
 package Lesson5;
 
 public class Car {
-    Car(String cvet, String motor) {
+    public Car(String cvet, String motor) {
         color = cvet;
         engine = motor;
     }
@@ -13,6 +13,7 @@ public class Car {
     String color;
     String engine;
     int speed;
+    static int price = 999;
 
     int gaz(int skorost) {
         speed += skorost;
